@@ -1,8 +1,7 @@
 ## [lucasamos.dev](http://www.lucasamos.dev)
 
 
-This app is built in [React](https://reactjs.org/)
-, styled with [React-Bootstrap](https://react-bootstrap.github.io/) and tested using [Jest](https://jestjs.io/) and [Enzyme](https://airbnb.io/enzyme/)
+This app is built in [React](https://reactjs.org/), styled with [React-Bootstrap](https://react-bootstrap.github.io/) and tested using [Jest](https://jestjs.io/) and [Enzyme](https://airbnb.io/enzyme/)
 
 
 ## Available Scripts

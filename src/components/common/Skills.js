@@ -30,28 +30,32 @@ export default function Skills() {
     'Code review',
 
   ];
-
+  const [buttonActive, setButtonActive] = useState(true);
   const [sorted, setSorted] = useState(false);
   const [buttons, setButtons] = useState(skills.map(skill => <Button key={skill} className="linked">{skill}</Button>));
 
   const shuffle = function shuffle() {
-    const shuffledButtons = buttons.slice();
-    let counter = shuffledButtons.length; let temp; let index;
-    // While there are elements in the array
-    while (counter > 0) {
-      // Pick a random index
-      index = Math.floor(Math.random() * counter);
-      // Decrease counter by 1
-      counter--;
-      // And swap the last element with it
-      temp = shuffledButtons[counter];
-      shuffledButtons[counter] = shuffledButtons[index];
-      shuffledButtons[index] = temp;
+    if (buttonActive) {
+      setButtonActive(false);
+      const shuffledButtons = buttons.slice();
+      let counter = shuffledButtons.length; let temp; let index;
+      // While there are elements in the array
+      while (counter > 0) {
+        // Pick a random index
+        index = Math.floor(Math.random() * counter);
+        // Decrease counter by 1
+        counter--;
+        // And swap the last element with it
+        temp = shuffledButtons[counter];
+        shuffledButtons[counter] = shuffledButtons[index];
+        shuffledButtons[index] = temp;
+      }
+      setButtons([]);
+      setTimeout(function () {
+        setButtonActive(true);
+        setButtons(shuffledButtons);
+      }, 700);
     }
-    setButtons([]);
-    setTimeout(function () {
-      setButtons(shuffledButtons);
-    }, 700);
   };
 
   return (

@@ -51,7 +51,7 @@ export default function Skills() {
         shuffledButtons[index] = temp;
       }
       setButtons([]);
-      setTimeout(function () {
+      setTimeout(() => {
         setButtonActive(true);
         setButtons(shuffledButtons);
       }, 700);

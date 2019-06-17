@@ -1,4 +1,4 @@
-## [lucasamos.dev](http://www.lucasamos.dev) 
+## [lucasamos.dev](http://www.lucasamos.dev)
 
 
 This app is built in React, styled with React-Bootstrap and tested using Jest and Enzyme
@@ -7,14 +7,8 @@ This app is built in React, styled with React-Bootstrap and tested using Jest an
 
 In the project directory, you can run:
 
+### `npm deploy`
+Builds the app and deploys it to firebase
+
 ### `npm start`
-
-Runs the app in the development mode.<br>
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
-
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+Starts the app on `developmentURL` if running in devlopment mode and `productionURL` if running in production mode. URLs are specified in `src/config/config.js`

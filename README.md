@@ -1,4 +1,5 @@
-## [http://lucasamos.dev](lucasamos.dev) 
+## [lucasamos.dev](http://www.lucasamos.dev) 
+
 
 This app is built in React, styled with React-Bootstrap and tested using Jest and Enzyme
 

@@ -12,7 +12,7 @@ In the project directory, you can run:
 ### `npm start`
 Starts the app on `developmentURL` if running in devlopment mode and `productionURL` if running in production mode. URLs are specified in `src/config/config.js`
 
-### `npm start`
+### `npm test`
 Runs the test suite
 
 ### `npm build`

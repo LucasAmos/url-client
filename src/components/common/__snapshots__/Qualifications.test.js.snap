@@ -1,0 +1,178 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Portfolio component matches the snapshot 1`] = `
+<div
+  className="qualifications"
+>
+  <div
+    className="container"
+  >
+    <div
+      className="title row"
+    >
+      <div
+        className="col"
+      >
+        <h2
+          className="react-reveal"
+          style={
+            Object {
+              "opacity": undefined,
+            }
+          }
+        >
+          HERE'S SOME OF MY EDUCATION
+        </h2>
+        <h3
+          className="react-reveal"
+          style={
+            Object {
+              "opacity": undefined,
+            }
+          }
+        >
+          (I LIKE TO LEARN THINGS)
+        </h3>
+      </div>
+    </div>
+    <div
+      className="standrews-row uni-row row"
+    >
+      <div
+        className="col-lg-6 col-12 offset-lg-0 order-2"
+      >
+        <div
+          className="react-reveal gaudeamus"
+          style={
+            Object {
+              "opacity": undefined,
+            }
+          }
+        />
+      </div>
+      <div
+        className="col-lg-5 col-12 offset-lg-0 order-1"
+      >
+        <h2
+          className="react-reveal"
+          style={
+            Object {
+              "opacity": undefined,
+            }
+          }
+        >
+          UNIVERSITY OF ST ANDREWS
+        </h2>
+        <p
+          className="react-reveal"
+          style={
+            Object {
+              "opacity": undefined,
+            }
+          }
+        >
+          I hold a Masters degree in Advanced Computer Science from the University of St Andrews where I competed for the university in national archery competitions.
+        </p>
+        <div
+          className="react-reveal my-work"
+          style={
+            Object {
+              "opacity": undefined,
+            }
+          }
+        >
+          <h3>
+             See some of my work
+          </h3>
+          <a
+            href="https://storage.googleapis.com/url-images-22/Alternatives%20to%20textual%20authentication.pdf"
+            rel="noopener noreferrer"
+            target="_blank"
+          >
+            <img
+              alt="alternatives to textual authentication"
+              className="portfolio-image"
+              src="textual.png"
+            />
+          </a>
+          <a
+            href="https://storage.googleapis.com/url-images-22/standrewsposter.pdf"
+            rel="noopener noreferrer"
+            target="_blank"
+          >
+            <img
+              alt="masters poster"
+              className="portfolio-image"
+              src="masters.png"
+            />
+          </a>
+          <a
+            href="https://github.com/LucasAmos/Masters-project"
+            rel="noopener noreferrer"
+            target="_blank"
+          >
+            <img
+              alt="github logo"
+              className="github-logo"
+              src="github.png"
+            />
+          </a>
+        </div>
+      </div>
+    </div>
+    <div
+      className="aston-row uni-row row"
+    >
+      <div
+        className="aston col-lg-6 col-12 order-lg-1 order-2"
+      >
+        <div
+          className="react-reveal campus"
+          style={
+            Object {
+              "opacity": undefined,
+            }
+          }
+        />
+      </div>
+      <div
+        className="bsc col-lg-5 col-12 order-lg-2 order-1"
+      >
+        <div
+          className="react-reveal"
+          style={
+            Object {
+              "opacity": undefined,
+            }
+          }
+        >
+          <h2>
+            ASTON UNIVERSITY
+          </h2>
+          <p>
+             I also hold a first class BSc in Computer Science from Aston University.
+          </p>
+          <p>
+            While studying for my undergraduate degree I was the President of Aston Computer Science Society, the university's largest academic society.
+          </p>
+          <p>
+            I particpated in the UK finals of the CapGemini SuperTechies business IT competition, finishing a close runner up in second place.
+          </p>
+          <a
+            href="https://github.com/LucasAmos/Undergraduate-project"
+            rel="noopener noreferrer"
+            target="_blank"
+          >
+            <img
+              alt="github logo"
+              className="github-logo"
+              id="github"
+              src="github.png"
+            />
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;

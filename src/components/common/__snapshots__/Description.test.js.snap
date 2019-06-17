@@ -1,0 +1,56 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Description component matches the snapshot 1`] = `
+<div
+  className="description"
+>
+  <div
+    className="container"
+  >
+    <div
+      className="row"
+    >
+      <div
+        className="col-one col-lg-12"
+      >
+        <h2
+          className="react-reveal"
+          style={
+            Object {
+              "opacity": undefined,
+            }
+          }
+        >
+          FULL STACK SOFTWARE ENGINEER
+        </h2>
+      </div>
+      <div
+        className="col-two col-lg-12"
+      >
+        <a
+          href="https://www.linkedin.com/in/lucasamos/"
+          rel="noopener noreferrer"
+          target="_blank"
+        >
+          <div
+            className="react-reveal"
+            style={
+              Object {
+                "opacity": undefined,
+              }
+            }
+          >
+            <button
+              className="linkedin-button hvr-pulse-grow btn btn-light"
+              disabled={false}
+              type="button"
+            >
+              LinkedIn
+            </button>
+          </div>
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+`;

@@ -1,0 +1,34 @@
+.this-site {
+  padding-top: 70px;
+  padding-bottom: 70px;
+  background-color: rgba(226, 226, 226, 0.2);
+}
+
+.this-site .about-col {
+  text-align: center;
+}
+
+.this-site h2{
+  font-size: 40px;
+  font-weight: 500;
+  font-family: 'Roboto Condensed';
+}
+
+.this-site .about {
+  text-align: center
+}
+
+.this-site p {
+  font-size: 18px;
+  font-family: 'Roboto';
+  font-weight: 100;
+  color: black;
+}
+
+.this-site a {
+  text-decoration: none;
+}
+
+.this-site a:hover {
+  color: #013b79;
+}

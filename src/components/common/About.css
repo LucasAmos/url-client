@@ -1,0 +1,75 @@
+.about {
+  background-color: rgba(226, 226, 226, 0.2);
+}
+
+.about img {
+  width: 500px;
+}
+
+.about .row-one h4 {
+  margin-top: 40px;
+  margin-bottom: 10px;
+  font-size: 20px;
+}
+
+.about .image-col {
+  /* t r b l */
+  padding: 0px 0px 0px 0px;
+}
+
+.about .me {
+  display: block;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center bottom;
+  height: 400px;
+  background: url('../../res/images/monkey.jpg') no-repeat center center scroll;
+  background-size: cover;
+}
+
+.about p {
+  font-size: 18px;
+  font-family: 'Roboto';
+  font-weight: 100;
+}
+
+.about a {
+  text-decoration: none;
+}
+
+.about a:hover {
+  color: #013b79;
+}
+
+.about p:last-of-type {
+  margin-bottom: 30px;
+}
+
+.about .sec {
+  padding: 0px 25px 0px 25px;
+}
+
+@media (max-width: 500px) {
+  .about .row-one {
+    padding: 40px 0px 40px 0px;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+  .about .row-one {
+    padding: 70px 0px 20px 0px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .about .row-one {
+    padding: 70px 0px 0px 0px;
+  }
+}
+
+@media (min-width: 501px) and (max-width: 991px) {
+  .about .row-one {
+    padding-top: 70px;
+    padding-bottom: 70px;
+  }
+}

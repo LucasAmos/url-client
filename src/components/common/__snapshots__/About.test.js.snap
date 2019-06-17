@@ -1,0 +1,260 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`About component matches the snapshot 1`] = `
+<div
+  className="about"
+>
+  <div
+    className="container"
+  >
+    <div
+      className="row-one row"
+    >
+      <div
+        className="col-lg-6"
+      >
+        <p
+          className="react-reveal"
+          style={
+            Object {
+              "opacity": undefined,
+            }
+          }
+        >
+          I am a full stack developer with experience building client projects in React, Node.js and Java. I have also worked with Code First: Girls teaching an introductory course in web development.
+        </p>
+        <p
+          className="react-reveal"
+          style={
+            Object {
+              "opacity": undefined,
+            }
+          }
+        >
+          I've worked on many and varied projects using numerous frameworks and languages. Check out my
+          <a
+            href="http://github.com/lucasamos"
+            rel="noopener noreferrer"
+            target="_blank"
+          >
+             GitHub 
+          </a>
+          or scroll to the bottom of this page to see examples of my work.
+        </p>
+        <p
+          className="react-reveal"
+          style={
+            Object {
+              "opacity": undefined,
+            }
+          }
+        >
+          When I'm not writing dank code I like to take
+          <a
+            href="https://www.flickr.com/photos/181849230@N04/"
+            rel="noopener noreferrer"
+            target="_blank"
+          >
+             photos 
+          </a>
+          and watch Formula One while enjoying one of Scotland's many fine craft beers. I also carry Baboons about on my shoulders from time to time.
+        </p>
+        <div
+          className="react-reveal skills"
+          style={
+            Object {
+              "opacity": undefined,
+            }
+          }
+        >
+          <div
+            className="skills-row"
+          >
+            A few of my skills
+            <svg
+              aria-hidden="true"
+              className="svg-inline--fa fa-sync fa-w-16 fa-1x icon"
+              data-icon="sync"
+              data-prefix="fas"
+              focusable="false"
+              onClick={[Function]}
+              role="img"
+              style={Object {}}
+              viewBox="0 0 512 512"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M440.65 12.57l4 82.77A247.16 247.16 0 0 0 255.83 8C134.73 8 33.91 94.92 12.29 209.82A12 12 0 0 0 24.09 224h49.05a12 12 0 0 0 11.67-9.26 175.91 175.91 0 0 1 317-56.94l-101.46-4.86a12 12 0 0 0-12.57 12v47.41a12 12 0 0 0 12 12H500a12 12 0 0 0 12-12V12a12 12 0 0 0-12-12h-47.37a12 12 0 0 0-11.98 12.57zM255.83 432a175.61 175.61 0 0 1-146-77.8l101.8 4.87a12 12 0 0 0 12.57-12v-47.4a12 12 0 0 0-12-12H12a12 12 0 0 0-12 12V500a12 12 0 0 0 12 12h47.35a12 12 0 0 0 12-12.6l-4.15-82.57A247.17 247.17 0 0 0 255.83 504c121.11 0 221.93-86.92 243.55-201.82a12 12 0 0 0-11.8-14.18h-49.05a12 12 0 0 0-11.67 9.26A175.86 175.86 0 0 1 255.83 432z"
+                fill="currentColor"
+                style={Object {}}
+              />
+            </svg>
+          </div>
+          <div
+            className="skill-buttons"
+          >
+            <span>
+              <button
+                className="linked btn btn-primary"
+                disabled={false}
+                type="button"
+              >
+                JavaScript
+              </button>
+              <button
+                className="linked btn btn-primary"
+                disabled={false}
+                type="button"
+              >
+                Node.js
+              </button>
+              <button
+                className="linked btn btn-primary"
+                disabled={false}
+                type="button"
+              >
+                Java
+              </button>
+              <button
+                className="linked btn btn-primary"
+                disabled={false}
+                type="button"
+              >
+                Python
+              </button>
+              <button
+                className="linked btn btn-primary"
+                disabled={false}
+                type="button"
+              >
+                CSS
+              </button>
+              <button
+                className="linked btn btn-primary"
+                disabled={false}
+                type="button"
+              >
+                Version control
+              </button>
+              <button
+                className="linked btn btn-primary"
+                disabled={false}
+                type="button"
+              >
+                REST
+              </button>
+              <button
+                className="linked btn btn-primary"
+                disabled={false}
+                type="button"
+              >
+                SQL
+              </button>
+              <button
+                className="linked btn btn-primary"
+                disabled={false}
+                type="button"
+              >
+                Firebase
+              </button>
+              <button
+                className="linked btn btn-primary"
+                disabled={false}
+                type="button"
+              >
+                Docker
+              </button>
+              <button
+                className="linked btn btn-primary"
+                disabled={false}
+                type="button"
+              >
+                Linux
+              </button>
+              <button
+                className="linked btn btn-primary"
+                disabled={false}
+                type="button"
+              >
+                React.js
+              </button>
+              <button
+                className="linked btn btn-primary"
+                disabled={false}
+                type="button"
+              >
+                NoSQL
+              </button>
+              <button
+                className="linked btn btn-primary"
+                disabled={false}
+                type="button"
+              >
+                Scrum
+              </button>
+              <button
+                className="linked btn btn-primary"
+                disabled={false}
+                type="button"
+              >
+                GCP
+              </button>
+              <button
+                className="linked btn btn-primary"
+                disabled={false}
+                type="button"
+              >
+                HTML5
+              </button>
+              <button
+                className="linked btn btn-primary"
+                disabled={false}
+                type="button"
+              >
+                Redux.js
+              </button>
+              <button
+                className="linked btn btn-primary"
+                disabled={false}
+                type="button"
+              >
+                TDD
+              </button>
+              <button
+                className="linked btn btn-primary"
+                disabled={false}
+                type="button"
+              >
+                CI / CD
+              </button>
+              <button
+                className="linked btn btn-primary"
+                disabled={false}
+                type="button"
+              >
+                Code review
+              </button>
+            </span>
+          </div>
+        </div>
+      </div>
+      <div
+        className="image-col col-lg-5 col-md-8 offset-lg-1 offset-md-2"
+      >
+        <div
+          className="react-reveal sec"
+          style={
+            Object {
+              "opacity": undefined,
+            }
+          }
+        >
+          <div
+            className="me"
+          />
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;

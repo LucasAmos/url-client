@@ -1,0 +1,65 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Portfolio component matches the snapshot 1`] = `
+<div
+  className="react-reveal portfolio"
+  style={
+    Object {
+      "opacity": undefined,
+    }
+  }
+>
+  <div
+    className="container"
+  >
+    <div
+      className="row"
+    >
+      <div
+        className="view-work-col col-lg-12"
+      >
+        <h2>
+          View some of my work
+        </h2>
+      </div>
+      <div
+        className="col-lg-4 col-md-6 col-sm-8 col-12 offset-lg-4 offset-md-3 offset-sm-2"
+      >
+        <div
+          className="form-group"
+        >
+          <div
+            className="input-group"
+          >
+            <input
+              className="form-control"
+              onChange={[Function]}
+              onKeyDown={[Function]}
+              placeholder="Enter the password"
+              type="password"
+              value=""
+            />
+            <div
+              className="input-group-append"
+            >
+              <button
+                className="submit-button btn btn-outline-secondary"
+                disabled={false}
+                onClick={[Function]}
+                type="button"
+              >
+                Submit
+              </button>
+            </div>
+            <div
+              className="invalid-feedback"
+            >
+              Please enter a valid password
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;

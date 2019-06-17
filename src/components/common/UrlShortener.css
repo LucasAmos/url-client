@@ -1,0 +1,148 @@
+.url-shortener {
+  margin-top: 70px;
+  background-color: rgba(226, 226, 226, 0.2);
+}
+
+.url-shortener input {
+  font-family: 'Roboto';
+  font-weight: 100;
+}
+
+.url-shortener button {
+  font-family: 'Roboto';
+  font-weight: 100;
+}
+
+.url-shortener h2 {
+padding-top: 25px;
+font-size: 30px;
+font-family: 'Roboto';
+font-weight: 500;
+}
+
+.url-shortener .navbar-light .navbar-brand {
+  color: #61dafb;
+}
+
+.url-shortener .navbar-light .navbar-nav .nav-link:hover, .navbar-light .navbar-nav .nav-link {
+  color: rgb(189, 189, 189);
+}
+
+.url-shortener .navbar-light .navbar-nav .show > .nav-link {
+  color: rgb(189, 189, 189);
+}
+
+.url-shortener .navbar-light .navbar-nav .nav-link:hover {
+  color: #ffffff;
+}
+
+.url-shortener .row-one {
+  margin-top: 50px;
+  /* margin-bottom: 50px; */
+  /* padding-bottom: 50px; */
+}
+
+.url-shortener .url-row {
+  min-height: 60px;
+}
+
+
+.url-shortener .left-col {
+  background-color: khaki;
+  }
+
+.url-shortener .right-col {
+background-color: salmon;
+}
+
+.url-shortener .url {
+  text-align: center;
+  font-size: 24px;
+}
+
+.url-shortener .submit-button {
+  width: 90px;
+}
+
+.url-shortener .submit-button.btn.btn-outline-secondary{
+  border-top-right-radius: 0.25rem;
+  border-bottom-right-radius: 0.25rem;
+}
+
+.url-shortener .submit-button.btn.btn-outline-secondary:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+  color: #6c757d;
+}
+
+.url-shortener .submit-button.btn.btn-outline-secondary:active {
+  border-color:  #ced4da;
+}
+
+.url-shortener .btn-outline-secondary {
+  border: 1px solid #ced4da;
+}
+
+
+.url-shortener a {
+  text-decoration: none;
+}
+
+.url-shortener a:hover {
+  color: #013b79;
+}
+
+@media (max-width: 340px){
+  .url-shortener span {
+  max-width:320px;
+  word-wrap:break-word;
+  }
+}
+
+@media(min-width: 341px) and (max-width: 360px){
+  .url-shortener span {
+  max-width:340px;
+  word-wrap:break-word;
+  }
+}
+
+@media(min-width: 361px) and (max-width: 380px){
+  .url-shortener span {
+  max-width:360px;
+  word-wrap:break-word;
+  }
+}
+
+@media(min-width: 381px) and (max-width: 400px){
+  .url-shortener span {
+  max-width:380px;
+  word-wrap:break-word;
+  }
+}
+
+@media(min-width: 3px) and (max-width: 360px){
+  .url-shortener span {
+  max-width:340px;
+  word-wrap:break-word;
+  }
+}
+
+@media (max-width: 360px) {
+  .url-shortener .row-one h2{
+    font-size: 24px;
+  }
+}
+
+@media (max-width: 400px) {
+  .url-shortener .url-row {
+    min-height: 80px;
+  }
+
+  @media (max-width: 500px) {
+    .url-shortener {
+      margin-top: 40px;
+      margin-bottom: 40px;
+    }
+  }
+}
+
+

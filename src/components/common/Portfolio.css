@@ -1,0 +1,70 @@
+.portfolio {
+  margin-top: 70px;
+  background-color: #fff;
+  margin-bottom: 70px;
+}
+
+.portfolio input, .portfolio button {
+  font-family: 'Roboto';
+  font-weight: 100;
+}
+
+.portfolio .view-work-col {
+  text-align: center;
+}
+
+.portfolio h2 {
+  font-family: 'Roboto Condensed';
+  font-size: 40px;
+}
+
+.portfolio .submit-button {
+  width: 80px;
+}
+
+.portfolio .submit-button.btn.btn-outline-secondary{
+  border-top-right-radius: 0.25rem;
+  border-bottom-right-radius: 0.25rem;
+}
+
+.portfolio .submit-button.btn.btn-outline-secondary:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+  color: #6c757d;
+}
+
+.portfolio .submit-button.btn.btn-outline-secondary:active {
+  border-color:  #ced4da;
+}
+
+.portfolio .btn-outline-secondary {
+  border: 1px solid #ced4da;
+}
+
+@media (max-width: 500px) {
+  .portfolio {
+    margin-top: 40px;
+    margin-bottom: 40px;
+  }
+}
+
+@media (max-width: 430px) {
+  .portfolio h2 {
+    font-size: 36px;
+  }
+}
+
+@media (max-width: 360px) {
+  .portfolio h2 {
+    font-size: 32px;
+  }
+}
+
+@media (min-width: 400px) and (max-width: 575px) {
+
+.portfolio .input-group {
+  padding-left: 5%;
+  padding-right: 5%;
+  }
+}
+
+

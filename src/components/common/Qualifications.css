@@ -1,0 +1,130 @@
+.qualifications {
+  margin: 70px 0px 70px 0px;
+  margin-bottom: 50px;
+  font-family: 'Roboto';
+}
+
+.qualifications h2 {
+  font-size: 26px;
+  padding-top: 10px;
+  padding-bottom: 20px;
+}
+
+.qualifications p {
+  font-size: 18px;
+  font-family: 'Roboto';
+  font-weight: 100;
+  text-align: justify;
+}
+
+.qualifications .aston, .qualifications .st-andrews {
+  text-align: center;
+}
+
+.qualifications .standrews-row .portfolio-image {
+  height: 200px;
+  border: 8px solid rgba(211, 211, 211, 0.2);
+  margin-right: 20px;
+  transition: all .2s ease-in-out;
+}
+
+.qualifications .standrews-row .portfolio-image:hover {
+  transform: scale(1.1);
+}
+
+.qualifications .gaudeamus {
+  display: block;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center bottom;
+  height: 400px;
+  background: url('../../res/images/standrews.jpg') no-repeat center center scroll;
+  background-size: cover;
+}
+
+.qualifications .campus {
+  display: block;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center bottom;
+  height: 400px;
+  background: url('../../res/images/aston.jpeg') no-repeat center center scroll;
+  background-size: cover;
+}
+
+.qualifications .standrews-row {
+margin-bottom: 70px;
+}
+
+.qualifications .standrews-row h3{
+  font-family: 'Roboto';
+  font-weight: 500;
+  font-size: 16px;
+  margin-bottom:10px;
+}
+
+.qualifications .title {
+  text-align: center;
+  font-family: 'Roboto Condensed';
+}
+
+.qualifications .title h2 {
+  font-size: 40px;
+  margin-bottom: 0px;
+  padding-bottom: 0px;
+}
+
+.qualifications .title h3 {
+  font-size: 24px;
+  margin-bottom: 40px;
+}
+
+.qualifications .github-logo {
+  width: 35px;
+  height: 35px;
+  border: 0px;
+  vertical-align: bottom;
+  transition: all .2s ease-in-out;
+}
+
+.qualifications .github-logo:hover {
+  transform: scale(1.1);
+}
+
+@media (max-width: 1199px){
+.qualifications .my-work {
+  display: none;
+  }
+}
+
+@media (max-width: 400px){
+  .qualifications .title h3 {
+    font-size: 20px;
+  }
+  }
+
+  @media (max-width: 500px) {
+    .qualifications  {
+      margin-top: 30px;
+      margin-bottom: 40px ;
+    }
+
+    .qualifications .uni-row {
+      margin-bottom: 20px;
+    }
+
+    .qualifications .aston-row{
+      margin-top: 50px;
+    }
+
+    .qualifications h2 {
+      padding-bottom: 0px;
+    }
+  }
+
+  @media  (max-width: 991px){
+
+    .qualifications #github {
+      display: none;
+  }
+  }

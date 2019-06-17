@@ -1,0 +1,49 @@
+.description{
+  margin: 50px 0px 50px 0px;
+}
+
+.description .col-one {
+  text-align: center;
+}
+
+.description .col-one h2 {
+  font-size: 40px;
+  font-family: 'Roboto Condensed';
+  font-weight: 500;
+}
+
+.description .col-two {
+  margin: 20px 0px 0px 0px;
+  text-align: center;
+}
+
+.description .linkedin-button {
+  background-color: #fff;
+  color: black;
+  border: none;
+  font-size: 20px;
+  padding: 5px 20px 5px 20px;
+  border: 2px solid black !important;
+}
+
+.description .linkedin-button:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.description .linkedin-button:active {
+  background-color: #283e4a3a;
+}
+
+@media (min-width: 1200px) {
+  .description .col-one h2 {
+    font-size: 50px;
+  }
+}
+
+@media (max-width: 500px) {
+  .description {
+    margin-top: 40px;
+    margin-bottom: 40px;
+  }
+}
+

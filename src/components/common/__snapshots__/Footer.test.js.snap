@@ -1,0 +1,41 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Footer component matches the snapshot 1`] = `
+<div
+  className="footer"
+>
+  <a
+    href="https://github.com/LucasAmos/"
+    rel="noopener noreferrer"
+    target="_blank"
+  >
+    <img
+      alt="github logo"
+      className="image"
+      src="githubwhite.png"
+    />
+  </a>
+  <a
+    href="https://www.linkedin.com/in/lucasamos/"
+    rel="noopener noreferrer"
+    target="_blank"
+  >
+    <img
+      alt="linkedin logo"
+      className="image"
+      src="in.png"
+    />
+  </a>
+  <a
+    href="https://www.flickr.com/photos/181849230@N04/"
+    rel="noopener noreferrer"
+    target="_blank"
+  >
+    <img
+      alt="flickr logo"
+      className="image"
+      src="flickr.png"
+    />
+  </a>
+</div>
+`;

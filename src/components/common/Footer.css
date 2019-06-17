@@ -1,0 +1,12 @@
+.footer {
+  padding: 20px 0px 20px 0px;
+  text-align: center;
+  background-color: #29363C;
+  color: white;
+}
+
+.footer .image {
+  height: 35px ;
+  width: 35px;
+  margin-right: 20px;
+}

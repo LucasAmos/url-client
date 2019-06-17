@@ -1,0 +1,24 @@
+{
+  "extends": "airbnb",
+  "env": {
+    "browser": true,
+    "mocha": true
+  },
+  "rules": {
+    "react/jsx-one-expression-per-line": [
+      0
+    ],
+    "linebreak-style": [
+      0
+    ],
+    "no-plusplus": [
+      0
+    ],
+    "react/jsx-filename-extension": [
+      0
+    ],
+    "jsx-a11y/label-has-associated-control": [
+      0
+    ]
+  }
+}

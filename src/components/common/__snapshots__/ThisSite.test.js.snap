@@ -1,0 +1,53 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ThisSite component matches the snapshot 1`] = `
+<div
+  className="this-site"
+>
+  <div
+    className="container"
+  >
+    <div
+      className="row"
+    >
+      <div
+        className="about-col col"
+      >
+        <h2>
+          About this site
+        </h2>
+        <p>
+          This site is built using a MERN stack (Mongo, Express, React, Node) and conforms to the
+          <a
+            href="https://jamstack.org/"
+            rel="noopener noreferrer"
+            target="_blank"
+          >
+             JAMstack 
+          </a>
+          architecture specification.
+        </p>
+        <p>
+          Check out the
+          <a
+            href="https://github.com/LucasAmos/url-client"
+            rel="noopener noreferrer"
+            target="_blank"
+          >
+             client 
+          </a>
+          and
+          <a
+            href="https://github.com/LucasAmos/URLshortener"
+            rel="noopener noreferrer"
+            target="_blank"
+          >
+             server 
+          </a>
+          code on GitHub
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+`;

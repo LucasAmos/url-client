@@ -1,0 +1,77 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`UrlShortener component matches the snapshot 1`] = `
+<div
+  className="react-reveal"
+  style={
+    Object {
+      "opacity": undefined,
+    }
+  }
+>
+  <div
+    className="url-shortener"
+  >
+    <div
+      className="container"
+    >
+      <div
+        className="row-one row"
+      >
+        <div
+          className="col-one col-lg-8 offset-lg-2"
+        >
+          <h2>
+            Need to shorten a URL?
+          </h2>
+        </div>
+        <div
+          className="col-two col-lg-8 offset-lg-2"
+        >
+          <div
+            className="form-group"
+          >
+            <div
+              className="input-group"
+            >
+              <input
+                className="url-input form-control"
+                name="name"
+                onChange={[Function]}
+                onKeyDown={[Function]}
+                placeholder="Enter a URL"
+                test="form-name"
+                type="text"
+                value=""
+              />
+              <div
+                className="input-group-append"
+              >
+                <button
+                  className="submit-button btn btn-outline-secondary"
+                  disabled={false}
+                  onClick={[Function]}
+                  type="button"
+                >
+                    
+                  Get URL!
+                </button>
+              </div>
+              <div
+                className="invalid-feedback"
+              >
+                Please enter a valid URL
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        className="url-row"
+      >
+        
+      </div>
+    </div>
+  </div>
+</div>
+`;

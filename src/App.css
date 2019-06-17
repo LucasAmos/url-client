@@ -1,0 +1,48 @@
+.app .navbar-light .navbar-brand {
+  color: #61dafb;
+}
+
+.app .navbar-light .navbar-nav .nav-link:hover, .navbar-light .navbar-nav .nav-link {
+  color: rgb(189, 189, 189);
+}
+
+.app .navbar-light .navbar-nav .show > .nav-link {
+  color: rgb(189, 189, 189);
+}
+
+.app .navbar-light .navbar-nav .nav-link:hover {
+  color: #ffffff;
+}
+
+.app .row-one {
+  margin-top: 10px;
+}
+
+.app .left-col {
+  background-color: khaki;
+  }
+
+.app .right-col {
+background-color: salmon;
+}
+
+.app .url {
+  text-align: center;
+  font-size: 24px;
+}
+
+.app .submit-button.btn.btn-outline-secondary{
+  border-top-right-radius: 0.25rem;
+  border-bottom-right-radius: 0.25rem;
+}
+
+.app .submit-button.btn.btn-outline-secondary:hover {
+  /* background-color: #ced4da; */
+}
+
+.app .btn-outline-secondary {
+  border: 1px solid #ced4da;
+}
+
+.app .url-input {
+}

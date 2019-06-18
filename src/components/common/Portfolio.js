@@ -18,7 +18,7 @@ export default function Portfolio() {
 
   function getWork() {
     setLoading(true);
-    fetch(`${route}portfolio?password=${password}`).then(response => response.json())
+    fetch(`${route}authorize?password=${password}`).then(response => response.json())
       .then((res) => {
         if (res.error) {
           setLoading(false);

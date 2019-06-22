@@ -44,6 +44,7 @@ export default function Portfolio() {
               lg={{ span: 12 }}
             >
               <h2>{title}</h2>
+              {work && <h5>(click on the images!)</h5>}
             </Col>
             <Col
               xs={{ span: 12 }}

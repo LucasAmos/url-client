@@ -18,6 +18,12 @@
   font-size: 40px;
 }
 
+.portfolio h5 {
+  font-family: 'Roboto Condensed';
+  font-size: 22px;
+  font-weight: 600;
+}
+
 .portfolio .submit-button {
   width: 80px;
 }

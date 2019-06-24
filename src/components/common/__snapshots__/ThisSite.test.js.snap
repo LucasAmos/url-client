@@ -17,15 +17,7 @@ exports[`ThisSite component matches the snapshot 1`] = `
           About this site
         </h2>
         <p>
-          This site is built using a MERN stack (Mongo, Express, React, Node) and conforms to the
-          <a
-            href="https://jamstack.org/"
-            rel="noopener noreferrer"
-            target="_blank"
-          >
-             JAMstack 
-          </a>
-          architecture specification.
+          This site is built using a MERN stack (Mongo, Express, React, Node).
         </p>
         <p>
           Check out the

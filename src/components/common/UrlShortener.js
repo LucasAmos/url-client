@@ -32,10 +32,11 @@ class UrlShortener extends Component {
     const { route } = this.state;
 
     // ping heroku to activate the dyno
-    fetch(`${route}status`)
-      .then((response) => {
-        response.json();
-      });
+    // not nessary now on paid plan
+    // fetch(`${route}status`)
+    //   .then((response) => {
+    //     response.json();
+    //   });
   }
 
   handleSubmit() {

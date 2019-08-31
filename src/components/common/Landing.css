@@ -38,9 +38,19 @@ margin: 0 auto;
   background-position-y: 9px;
   background-size: 80%;
   cursor: pointer;
+  /* position: relative;
+  top: -50px; */
 }
 
+/* .landing .chrome-name {
+  position: relative;
+  top: -70px;
+} */
 
+.landing .chrome-date {
+  padding-bottom: 300px;
+  background-color: red;
+}
 
 
 /* Pulse Grow */

@@ -120,11 +120,16 @@ margin: 0 auto;
   }
 }
 
-/* iPhone SE type phones */
+/* iPhone SE size phones */
 @media (max-width: 330px) {
   .landing .section-scroll {
     position: relative;
     top: -50px;
     margin: 0 auto;
+  }
+
+  .landing .container-text p {
+    line-height: 77vh;
+    padding-top: 5vh;
   }
 }

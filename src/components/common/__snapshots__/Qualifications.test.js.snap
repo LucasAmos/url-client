@@ -74,6 +74,27 @@ exports[`Portfolio component matches the snapshot 1`] = `
           I hold a Masters degree in Advanced Computer Science from the University of St Andrews where I competed for the university in national archery competitions.
         </p>
         <div
+          className="react-reveal"
+          id="github-narrow"
+          style={
+            Object {
+              "opacity": undefined,
+            }
+          }
+        >
+          <a
+            href="https://github.com/LucasAmos/Masters-project"
+            rel="noopener noreferrer"
+            target="_blank"
+          >
+            <img
+              alt="github logo"
+              className="github-logo"
+              src="github.png"
+            />
+          </a>
+        </div>
+        <div
           className="react-reveal my-work"
           style={
             Object {

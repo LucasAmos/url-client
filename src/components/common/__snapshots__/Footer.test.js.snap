@@ -37,5 +37,16 @@ exports[`Footer component matches the snapshot 1`] = `
       src="flickr.png"
     />
   </a>
+  <a
+    href="https://www.npmjs.com/~lucasamos"
+    rel="noopener noreferrer"
+    target="_blank"
+  >
+    <img
+      alt="npm logo"
+      className="image"
+      src="npm.png"
+    />
+  </a>
 </div>
 `;

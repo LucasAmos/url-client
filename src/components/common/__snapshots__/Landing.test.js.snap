@@ -29,7 +29,8 @@ exports[`Landing component matches the snapshot 1`] = `
     <div
       className="lucas"
     >
-      Lucas Amos 2018
+      Lucas Amos 
+      2019
     </div>
   </div>
   <div />

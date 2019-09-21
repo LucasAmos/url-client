@@ -1,5 +1,6 @@
 import React, { useRef } from 'react';
 import smoothscroll from 'smoothscroll-polyfill';
+import moment from 'moment';
 import './Landing.css';
 
 export default function Landing() {
@@ -22,7 +23,7 @@ export default function Landing() {
             onClick={() => scrollToRef(myRef)}
           />
         </div>
-        <div className="lucas">Lucas Amos 2018</div>
+        <div className="lucas">Lucas Amos {moment.utc().year()}</div>
       </div>
       <div ref={myRef} />
     </div>

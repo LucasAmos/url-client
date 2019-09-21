@@ -44,6 +44,19 @@ export default function Qualifications() {
                 University of St Andrews where I competed for the university
                 in national archery competitions.
               </p>
+              <div id="github-narrow">
+                <a
+                  href="https://github.com/LucasAmos/Masters-project"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <img
+                    src={github}
+                    className="github-logo"
+                    alt="github logo"
+                  />
+                </a>
+              </div>
 
               <div className="my-work">
                 <h3> See some of my work</h3>

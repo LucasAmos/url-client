@@ -3,6 +3,7 @@ import './Footer.css';
 import githubwhite from '../../res/images/githubwhite.png';
 import linkedin from '../../res/images/in.png';
 import flickr from '../../res/images/flickr.png';
+import npm from '../../res/images/npm.png';
 
 export default function Footer() {
   return (
@@ -38,6 +39,18 @@ export default function Footer() {
           src={flickr}
           className="image"
           alt="flickr logo"
+        />
+      </a>
+
+      <a
+        href="https://www.npmjs.com/~lucasamos"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <img
+          src={npm}
+          className="image"
+          alt="npm logo"
         />
       </a>
     </div>

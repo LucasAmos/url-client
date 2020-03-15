@@ -1,7 +1,5 @@
 import React, { useState } from 'react';
-import {
-  Container, Row, Col, Form, Button, InputGroup, FormControl,
-} from 'react-bootstrap';
+import { Container, Row, Col, Form, Button, InputGroup, FormControl } from 'react-bootstrap';
 import Fade from 'react-reveal/Fade';
 import PortfolioItem from './PortfolioItem';
 import loadingImage from '../../res/images/loading.gif';
@@ -18,8 +16,9 @@ export default function Portfolio() {
 
   function getWork() {
     setLoading(true);
-    fetch(`${route}authorize?password=${password}`).then(response => response.json())
-      .then((res) => {
+    fetch(`${route}authorize?password=${password}`)
+      .then(response => response.json())
+      .then(res => {
         if (res.error) {
           setLoading(false);
           setAuthError(true);
@@ -29,7 +28,8 @@ export default function Portfolio() {
           setWork(res.data);
           setAuthError(false);
         }
-      }).catch(() => {
+      })
+      .catch(() => {
         setLoading(false);
         setAuthError(true);
       });
@@ -39,19 +39,11 @@ export default function Portfolio() {
       <div className="portfolio">
         <Container>
           <Row>
-            <Col
-              className="view-work-col"
-              lg={{ span: 12 }}
-            >
+            <Col className="view-work-col" lg={{ span: 12 }}>
               <h2>{title}</h2>
               {work && <h5>(click on the images!)</h5>}
             </Col>
-            <Col
-              xs={{ span: 12 }}
-              sm={{ span: 8, offset: 2 }}
-              md={{ span: 6, offset: 3 }}
-              lg={{ span: 4, offset: 4 }}
-            >
+            <Col xs={{ span: 12 }} sm={{ span: 8, offset: 2 }} md={{ span: 6, offset: 3 }} lg={{ span: 4, offset: 4 }}>
               {!work && (
                 <Form.Group>
                   <InputGroup>
@@ -64,30 +56,18 @@ export default function Portfolio() {
                       placeholder="Enter the password"
                     />
                     <InputGroup.Append>
-                      <Button
-                        className="submit-button"
-                        variant="outline-secondary"
-                        onClick={getWork}
-                      >
+                      <Button className="submit-button" variant="outline-secondary" onClick={getWork}>
                         {loading ? <img src={loadingImage} alt="loading" /> : 'Submit'}
                       </Button>
                     </InputGroup.Append>
-                    <Form.Control.Feedback type="invalid">
-                      Please enter a valid password
-                    </Form.Control.Feedback>
+                    <Form.Control.Feedback type="invalid">Please enter a valid password</Form.Control.Feedback>
                   </InputGroup>
                 </Form.Group>
               )}
             </Col>
           </Row>
         </Container>
-        {work && work.map(elem => (
-          <PortfolioItem
-            key={elem.title}
-            portfolio={elem}
-          />
-        ))
-        }
+        {work && work.map(elem => <PortfolioItem key={elem.title} portfolio={elem} />)}
       </div>
     </Fade>
   );

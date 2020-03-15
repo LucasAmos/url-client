@@ -27,6 +27,36 @@
   background-size: cover;
 }
 
+.caro {
+  margin-top: 50px;
+}
+
+.about .gown {
+  display: block;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center bottom;
+  height: 400px;
+  background: url('../../res/images/gown.jpg');
+  background-size: cover;
+}
+
+@media (max-width: 500px) {
+  .about .gown {
+    background: url('../../res/images/gown.jpg') no-repeat center center scroll;
+  }
+}
+
+.about .lucas {
+  display: block;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center bottom;
+  height: 400px;
+  background: url('../../res/images/lucas.jpg') no-repeat;
+  background-size: cover;
+}
+
 .about p {
   font-size: 18px;
   font-family: 'Roboto';

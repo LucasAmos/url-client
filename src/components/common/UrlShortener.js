@@ -3,9 +3,7 @@ import React, { Component } from 'react';
 import validator from 'validator';
 import Fade from 'react-reveal/Fade';
 import withReveal from 'react-reveal/withReveal';
-import {
-  Container, Row, Col, Form, Button, InputGroup, FormControl,
-} from 'react-bootstrap';
+import { Container, Row, Col, Form, Button, InputGroup, FormControl } from 'react-bootstrap';
 import config from '../../config/config';
 import loadingImage from '../../res/images/loading.gif';
 import './UrlShortener.css';
@@ -25,7 +23,7 @@ class UrlShortener extends Component {
       validUrl: true,
       link: '',
       shortenRoute: process.env.NODE_ENV === 'development' ? config.developmentURL : config.productionSubdomain,
-      route: process.env.NODE_ENV === 'development' ? config.developmentURL : config.productionURL,
+      route: process.env.NODE_ENV === 'development' ? config.developmentURL : config.productionURL
     };
     this.handleChange = this.handleChange.bind(this);
     this.handleSubmit = this.handleSubmit.bind(this);
@@ -44,7 +42,7 @@ class UrlShortener extends Component {
     const validURL = validator.isURL(url);
 
     this.setState({
-      validUrl: validator.isURL(url),
+      validUrl: validator.isURL(url)
     });
 
     if (validURL) {
@@ -52,18 +50,21 @@ class UrlShortener extends Component {
       fetch(`${route}api/shorten`, {
         method: 'POST',
         headers: {
-          'Accept': 'application/json',
-          'Content-Type': 'application/json',
+          Accept: 'application/json',
+          'Content-Type': 'application/json'
         },
         body: JSON.stringify({
-          url: UrlShortener.formatUrl(url),
-        }),
-      }).then(response => response.json()).then((res) => {
-        this.setState({
-          link: shortenRoute + res.hash,
-          loading: false,
-        });
-      }).catch(() => this.setState({ loading: false }));
+          url: UrlShortener.formatUrl(url)
+        })
+      })
+        .then(response => response.json())
+        .then(res => {
+          this.setState({
+            link: shortenRoute + res.hash,
+            loading: false
+          });
+        })
+        .catch(() => this.setState({ loading: false }));
     }
   }
 
@@ -72,25 +73,15 @@ class UrlShortener extends Component {
   }
 
   render() {
-    const {
-      validUrl, url, link, loading,
-    } = this.state;
+    const { validUrl, url, link, loading } = this.state;
     return (
       <div className="url-shortener">
         <Container>
           <Row className="row-one">
-            <Col
-              className="col-one"
-              lg={{ span: 8, offset: 2 }}
-            >
-              <h2>
-                Need to shorten a URL?
-              </h2>
+            <Col className="col-one" lg={{ span: 8, offset: 2 }}>
+              <h2>Need to shorten a URL?</h2>
             </Col>
-            <Col
-              className="col-two"
-              lg={{ span: 8, offset: 2 }}
-            >
+            <Col className="col-two" lg={{ span: 8, offset: 2 }}>
               <Form.Group>
                 <InputGroup>
                   <FormControl
@@ -101,25 +92,21 @@ class UrlShortener extends Component {
                     isInvalid={!validUrl}
                     type="text"
                     value={url}
-                    onChange={(e) => {
+                    onChange={e => {
                       this.setState({
                         url: e.target.value,
-                        validUrl: e.target.value.length > 0,
+                        validUrl: e.target.value.length > 0
                       });
                     }}
                     placeholder="Enter a URL"
                   />
                   <InputGroup.Append>
-                    <Button
-                      className="submit-button"
-                      variant="outline-secondary"
-                      onClick={this.handleSubmit}
-                    >  {loading ? <img src={loadingImage} alt="loading" /> : 'Get URL!'}
+                    <Button className="submit-button" variant="outline-secondary" onClick={this.handleSubmit}>
+                      {' '}
+                      {loading ? <img src={loadingImage} alt="loading" /> : 'Get URL!'}
                     </Button>
                   </InputGroup.Append>
-                  <Form.Control.Feedback type="invalid">
-                    Please enter a valid URL
-                  </Form.Control.Feedback>
+                  <Form.Control.Feedback type="invalid">Please enter a valid URL</Form.Control.Feedback>
                 </InputGroup>
               </Form.Group>
             </Col>
@@ -127,16 +114,9 @@ class UrlShortener extends Component {
           <div className="url-row">
             {link && (
               <Row>
-                <Col
-                  className="url"
-                  lg={{ span: 8, offset: 2 }}
-                >
+                <Col className="url" lg={{ span: 8, offset: 2 }}>
                   <span>
-                    <a
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      href={link}
-                    >
+                    <a target="_blank" rel="noopener noreferrer" href={link}>
                       {link}
                     </a>
                   </span>

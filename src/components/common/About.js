@@ -13,11 +13,16 @@ export default function About() {
           <Col lg={{ span: 6 }}>
             <Fade>
               <p>
-                I am a full stack developer with experience building client projects in React, Node.js and Java. I have
-                also worked with Code First: Girls teaching an introductory course in web development.
+                I am an AWS certified cloud software engineer experienced in working across the stack. I learn new
+                technologies at lightspeed and work with whatever tool is best for the job, building projects in React,
+                React Native, Svelte, Node.js, Python and Java.
+              </p>
+              <p>
+                I have a Masters degree in Advanced Computer Science from the University of St Andrews where I worked
+                with Code First: Girls teaching an introductory course in web development.{' '}
               </p>
             </Fade>
-            <Fade delay={100}>
+            {/* <Fade delay={100}>
               <p>
                 I&apos;ve worked on many and varied projects using numerous frameworks and languages. Check out my
                 <a target="_blank" rel="noopener noreferrer" href="http://github.com/lucasamos">
@@ -25,7 +30,7 @@ export default function About() {
                 </a>
                 or scroll to the bottom of this page to see examples of my work.
               </p>
-            </Fade>
+            </Fade> */}
             <Fade delay={200}>
               <p>
                 When I&apos;m not writing dank code I like to take

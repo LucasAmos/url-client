@@ -1,4 +1,4 @@
-.description{
+.description {
   margin: 50px 0px 50px 0px;
 }
 
@@ -10,6 +10,18 @@
   font-size: 40px;
   font-family: 'Roboto Condensed';
   font-weight: 500;
+  margin-bottom: 0px;
+}
+
+.description .title-wrapper {
+  display: inline-block;
+}
+
+.description .certification {
+  width: 8rem;
+  float: right;
+  position: relative;
+  top: -0.5rem;
 }
 
 .description .col-two {
@@ -36,7 +48,8 @@
 
 @media (min-width: 1200px) {
   .description .col-one h2 {
-    font-size: 50px;
+    font-size: 60px;
+    font-weight: 900;
   }
 }
 
@@ -47,3 +60,8 @@
   }
 }
 
+@media (max-width: 501px) {
+  .description .certification {
+    float: none;
+  }
+}

@@ -16,29 +16,36 @@ export default function Skills() {
     'Version control',
     'REST',
     'SQL',
-    'Firebase',
+    'Svelte',
     'Docker',
     'Linux',
     'React.js',
     'NoSQL',
     'Scrum',
-    'GCP',
+    'AWS',
     'HTML5',
     'Redux.js',
     'TDD',
     'CI / CD',
-    'Code review',
-
+    'Code review'
   ];
   const [buttonActive, setButtonActive] = useState(true);
   const [sorted, setSorted] = useState(false);
-  const [buttons, setButtons] = useState(skills.map(skill => <Button key={skill} className="linked">{skill}</Button>));
+  const [buttons, setButtons] = useState(
+    skills.map(skill => (
+      <Button key={skill} className="linked">
+        {skill}
+      </Button>
+    ))
+  );
 
   const shuffle = function shuffle() {
     if (buttonActive) {
       setButtonActive(false);
       const shuffledButtons = buttons.slice();
-      let counter = shuffledButtons.length; let temp; let index;
+      let counter = shuffledButtons.length;
+      let temp;
+      let index;
       // While there are elements in the array
       while (counter > 0) {
         // Pick a random index
@@ -74,11 +81,7 @@ export default function Skills() {
           />
         </div>
         <div className="skill-buttons">
-          <ReactCSSTransitionGroup
-            transitionName="fade"
-            transitionEnterTimeout={500}
-            transitionLeaveTimeout={500}
-          >
+          <ReactCSSTransitionGroup transitionName="fade" transitionEnterTimeout={500} transitionLeaveTimeout={500}>
             {buttons}
           </ReactCSSTransitionGroup>
         </div>

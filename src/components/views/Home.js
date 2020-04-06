@@ -16,7 +16,7 @@ export default function Home() {
       <Description />
       <About />
       <Qualifications />
-      <UrlShortener />
+      {/* <UrlShortener /> */}
       <Portfolio />
       <ThisSite />
       <Footer />

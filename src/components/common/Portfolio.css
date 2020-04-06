@@ -1,10 +1,12 @@
 .portfolio {
   margin-top: 70px;
-  background-color: #fff;
-  margin-bottom: 70px;
+  background-color: rgba(226, 226, 226, 0.2);
+  padding-top: 50px;
+  padding-bottom: 50px;
 }
 
-.portfolio input, .portfolio button {
+.portfolio input,
+.portfolio button {
   font-family: 'Roboto';
   font-weight: 100;
 }
@@ -28,7 +30,7 @@
   width: 80px;
 }
 
-.portfolio .submit-button.btn.btn-outline-secondary{
+.portfolio .submit-button.btn.btn-outline-secondary {
   border-top-right-radius: 0.25rem;
   border-bottom-right-radius: 0.25rem;
 }
@@ -39,7 +41,7 @@
 }
 
 .portfolio .submit-button.btn.btn-outline-secondary:active {
-  border-color:  #ced4da;
+  border-color: #ced4da;
 }
 
 .portfolio .btn-outline-secondary {
@@ -66,11 +68,8 @@
 }
 
 @media (min-width: 400px) and (max-width: 575px) {
-
-.portfolio .input-group {
-  padding-left: 5%;
-  padding-right: 5%;
+  .portfolio .input-group {
+    padding-left: 5%;
+    padding-right: 5%;
   }
 }
-
-

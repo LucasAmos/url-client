@@ -1,21 +1,21 @@
 .this-site {
-  padding-top: 70px;
-  padding-bottom: 70px;
-  background-color: rgba(226, 226, 226, 0.2);
+  padding-top: 40px;
+  padding-bottom: 40px;
+  background-color: #ffffff;
 }
 
 .this-site .about-col {
   text-align: center;
 }
 
-.this-site h2{
+.this-site h2 {
   font-size: 40px;
   font-weight: 500;
   font-family: 'Roboto Condensed';
 }
 
 .this-site .about {
-  text-align: center
+  text-align: center;
 }
 
 .this-site p {

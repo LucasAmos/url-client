@@ -1,0 +1,24 @@
+.navigation-component {
+  min-height: 63px;
+}
+
+@media (max-width: 375px) {
+  .navigation-component {
+    /* height: 63px; */
+  }
+
+  .navigation-component .navbar {
+  }
+}
+
+@media (min-width: 376px) and (max-width: 410px) {
+  .navigation-component {
+  }
+
+  .navigation-component .navbar {
+  }
+}
+
+.minheight {
+  min-height: calc(100vh - 63px - 75px);
+}

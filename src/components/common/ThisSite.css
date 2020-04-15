@@ -1,17 +1,11 @@
 .this-site {
-  padding-top: 40px;
-  padding-bottom: 40px;
+  padding-top: 25px;
+  padding-bottom: 25px;
   background-color: #ffffff;
 }
 
 .this-site .about-col {
   text-align: center;
-}
-
-.this-site h2 {
-  font-size: 40px;
-  font-weight: 500;
-  font-family: 'Roboto Condensed';
 }
 
 .this-site .about {
@@ -23,6 +17,7 @@
   font-family: 'Roboto';
   font-weight: 100;
   color: black;
+  margin: 0px;
 }
 
 .this-site a {

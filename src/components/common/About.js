@@ -5,7 +5,7 @@ import Fade from 'react-reveal/Fade';
 import Skills from './Skills';
 import './About.css';
 
-export default function About() {
+const About = props => {
   return (
     <div className="about">
       <Container>
@@ -22,15 +22,6 @@ export default function About() {
                 with Code First: Girls teaching an introductory course in web development.{' '}
               </p>
             </Fade>
-            {/* <Fade delay={100}>
-              <p>
-                I&apos;ve worked on many and varied projects using numerous frameworks and languages. Check out my
-                <a target="_blank" rel="noopener noreferrer" href="http://github.com/lucasamos">
-                  &nbsp;GitHub&nbsp;
-                </a>
-                or scroll to the bottom of this page to see examples of my work.
-              </p>
-            </Fade> */}
             <Fade delay={200}>
               <p>
                 When I&apos;m not writing dank code I like to take
@@ -68,4 +59,6 @@ export default function About() {
       </Container>
     </div>
   );
-}
+};
+
+export default About;

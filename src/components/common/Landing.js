@@ -2,14 +2,15 @@ import React, { useRef } from 'react';
 import smoothscroll from 'smoothscroll-polyfill';
 import moment from 'moment';
 import './Landing.css';
+import { Navbar, Nav, NavDropdown } from 'react-bootstrap';
 
-export default function Landing() {
+const Landing = React.forwardRef((props, ref) => {
   smoothscroll.polyfill();
   const myRef = useRef(null);
   const scrollToRef = ref =>
     ref.current && window.scrollTo({ top: ref.current.offsetTop, left: 0, behavior: 'smooth' });
   return (
-    <div>
+    <>
       <div className="landing">
         <div className="container-text">
           <p className="la">Lucas Amos</p>
@@ -26,7 +27,10 @@ export default function Landing() {
         </div>
         <div className="lucas">Lucas Amos {moment.utc().year()}</div>
       </div>
+      <div ref={ref} />
       <div ref={myRef} />
-    </div>
+    </>
   );
-}
+});
+
+export default Landing;

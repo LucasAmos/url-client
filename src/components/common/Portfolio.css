@@ -1,8 +1,9 @@
 .portfolio {
-  margin-top: 70px;
+  display: flex;
+  align-items: center;
   background-color: rgba(226, 226, 226, 0.2);
-  padding-top: 50px;
-  padding-bottom: 50px;
+
+  min-height: calc(100vh - 63px - 75px);
 }
 
 .portfolio input,
@@ -50,8 +51,6 @@
 
 @media (max-width: 500px) {
   .portfolio {
-    margin-top: 40px;
-    margin-bottom: 40px;
   }
 }
 

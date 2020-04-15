@@ -9,27 +9,14 @@ export default function ThisSite() {
       <Container>
         <Row>
           <Col className="about-col">
-            <h2>About this site</h2>
             <p>This site is built using a MERN stack (Mongo, Express, React, Node).</p>
             <p>
               Check out the
-              <a
-                target="_blank"
-                rel="noopener noreferrer"
-                href="https://github.com/LucasAmos/url-client"
-              >
-                &nbsp;client&nbsp;
-              </a>and
-              <a
-                target="_blank"
-                rel="noopener noreferrer"
-                href="https://github.com/LucasAmos/URLshortener"
-              >
-                &nbsp;server&nbsp;
+              <a target="_blank" rel="noopener noreferrer" href="https://github.com/LucasAmos/url-client">
+                &nbsp;code&nbsp;
               </a>
-              code on GitHub
+              on GitHub
             </p>
-
           </Col>
         </Row>
       </Container>

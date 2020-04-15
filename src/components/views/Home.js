@@ -17,7 +17,7 @@ const Home = function Home() {
 
   useEffect(() => {
     if (window.location.hash === '#about') {
-      scrollToRef(description, 'auto');
+      scrollToRef(description, 'smooth');
     }
   });
   smoothscroll.polyfill();

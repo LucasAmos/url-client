@@ -72,3 +72,4 @@ src/.DS_Store
 src/res/.DS_Store
 src/res/images/.DS_Store
 .DS_Store
+.firebaserc

@@ -1,6 +1,5 @@
 import React, { useRef, useEffect } from 'react';
-import UrlShortener from '../common/UrlShortener';
-import { useLocation, withRouter } from 'react-router-dom';
+import { withRouter } from 'react-router-dom';
 import { LinkContainer } from 'react-router-bootstrap';
 import { Navbar, Nav } from 'react-bootstrap';
 import smoothscroll from 'smoothscroll-polyfill';
@@ -8,8 +7,6 @@ import Landing from '../common/Landing';
 import About from '../common/About';
 import Description from '../common/Description';
 import Footer from '../common/Footer';
-import Qualifications from '../common/Qualifications';
-import Portfolio from '../common/Portfolio';
 import ThisSite from '../common/ThisSite';
 import './Home.css';
 

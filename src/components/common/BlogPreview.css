@@ -1,0 +1,20 @@
+.blogPreview {
+  background-color: rgba(0, 0, 0, 0.025);
+}
+
+.blogPreview .row {
+  padding: 20px 10px 20px 10px;
+  cursor: pointer;
+}
+
+.blogPreview img {
+  width: 100%;
+}
+
+.blogPreview h1 {
+  font-size: 30px;
+}
+
+.blogPreview h2 {
+  font-size: 18px;
+}

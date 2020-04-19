@@ -1,0 +1,51 @@
+.blogpost {
+  padding-top: 20px;
+}
+
+.blogpost #intro {
+  margin-bottom: 50px;
+}
+
+.blogpost .row {
+  margin-bottom: 20px;
+}
+
+.blogpost pre {
+  margin-bottom: 40px;
+  padding: 10px;
+}
+
+.blogpost .container {
+  max-width: 1300px;
+}
+
+.blogpost header {
+  font-size: 36px;
+  margin-bottom: 20px;
+  font-weight: 600;
+}
+
+.blogpost h1 {
+  font-size: 30px;
+  font-weight: 600;
+}
+
+.blogpost h2 {
+  font-size: 24px;
+  font-weight: 100;
+}
+
+.blogpost p {
+  font-size: 22px;
+  font-weight: 100;
+}
+
+.blogpost a {
+  text-decoration: none;
+  color: #007dbc;
+  font-weight: 500;
+}
+
+.blogpost a:hover {
+  color: #005079;
+}

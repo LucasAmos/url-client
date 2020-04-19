@@ -1,5 +1,23 @@
 const blog = [
   {
+    type: 'title',
+    value: 'blog2'
+  },
+  {
+    type: 'previous',
+    value: {
+      title: 'previous blog',
+      route: 'previous blog route'
+    }
+  },
+  {
+    type: 'next',
+    value: {
+      title: 'next blog',
+      route: 'next blog route'
+    }
+  },
+  {
     type: 'text',
     value: `
 # This is a header 2\n\n 

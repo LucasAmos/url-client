@@ -1,14 +1,11 @@
 import React from 'react';
 import SyntaxHighlighter from 'react-syntax-highlighter';
 import { docco } from 'react-syntax-highlighter/dist/esm/styles/hljs';
-import blogPosts from './blogs';
-import BlogPost from '../components/common/BlogPost';
 const ReactMarkdown = require('react-markdown/with-html');
 
-const blogs = [];
-
-blogPosts.forEach((blog, i) => {
+export default function index({ blog }) {
   const formattedBlog = [];
+
   blog.forEach(element => {
     if (element.type === 'text') {
       formattedBlog.push(
@@ -26,7 +23,6 @@ blogPosts.forEach((blog, i) => {
       );
     }
   });
-  blogs.push(<BlogPost key={i}>{formattedBlog}</BlogPost>);
-});
 
-export { blogs };
+  return <>{formattedBlog}</>;
+}

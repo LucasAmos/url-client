@@ -5,11 +5,13 @@ import Home from './components/views/Home';
 import Blog from './components/common/Blog';
 import Portfolio from './components/common/Portfolio';
 import Qualifications from './components/common/Qualifications';
+import Rekognition from './blogs/Rekognition';
 
 export default function App() {
   return (
     <BrowserRouter>
       <Switch>
+        <Route path="/blog/rekognition" component={Rekognition} />
         <Route path="/blog" component={Blog} />
         <Route path="/education" component={Qualifications} />
         <Route path="/portfolio" component={Portfolio} />

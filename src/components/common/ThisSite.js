@@ -10,13 +10,6 @@ export default function ThisSite() {
         <Row>
           <Col className="about-col">
             <p>This site is built using a MERN stack (Mongo, Express, React, Node).</p>
-            <p>
-              Check out the
-              <a target="_blank" rel="noopener noreferrer" href="https://github.com/LucasAmos/url-client">
-                &nbsp;code&nbsp;
-              </a>
-              on GitHub
-            </p>
           </Col>
         </Row>
       </Container>

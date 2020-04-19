@@ -49,3 +49,9 @@
 .blogpost a:hover {
   color: #005079;
 }
+
+.blogpost img {
+  margin-top: 10px;
+  margin-bottom: 40px;
+  border: 2px solid gray;
+}

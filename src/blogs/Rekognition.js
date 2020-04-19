@@ -199,9 +199,28 @@ export default function Blog1() {
           <Row>
             <Col>
               <h1>Creating AWS credentials and an S3 bucket</h1>
-              <p>MAKE SURE TO MAKE SOME CREDENTIALS!!!</p>
+              <p>
+                Before we get started we will need to create some credentials by visiting the{' '}
+                <a href="https://console.aws.amazon.com">AWS console</a>. Once you have logged in
+                select the <b>IAM</b> service and navigate to the <b>users</b> section. Here will we
+                click <b>Add user</b> and create a user with programmatic access.
+                <img src="https://lucas-blog-images.s3.eu-west-2.amazonaws.com/rekognition/rekognition1.png" />
+                <p>
+                  Click next and progress to the screen where will give the user the required
+                  permissions by clicking <b>Attach existing policies directly</b>. Here we can use
+                  the search box to add the <b> AmazonRekognitionFullAccess</b> and{' '}
+                  <b>AmazonS3FullAccess</b> policies. Click next twice and then click{' '}
+                  <b>create user</b>
+                </p>
+                <img src="https://lucas-blog-images.s3.eu-west-2.amazonaws.com/rekognition/rekognition2.png" />
+              </p>
+
+              <p>
+                Make sure to copy your Access key ID and Secret access key, we will need them later.
+              </p>
+
+              <img src="https://lucas-blog-images.s3.eu-west-2.amazonaws.com/rekognition/rekognition3.png" />
             </Col>
-            <p>details</p>
           </Row>
           <Row>
             <Col>

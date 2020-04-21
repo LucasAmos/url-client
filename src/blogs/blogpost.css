@@ -51,7 +51,7 @@
 }
 
 .blogpost img {
-  margin-top: 10px;
-  margin-bottom: 40px;
+  margin: 40px;
   border: 2px solid gray;
+  width: 80%;
 }

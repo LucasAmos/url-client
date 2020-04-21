@@ -145,10 +145,19 @@ const code10 = ` {
   ]
  }`;
 
-const code11 = `99.9832534790039% confidence that is a Text
-98.00961303710938% confidence that is a Document
-98.00961303710938% confidence that is a Diploma
-76.6316146850586% confidence that is a Menu`;
+const code11 = `99.94205474853516% confidence that is a Soil
+99.81169891357422% confidence that is a Nature
+99.67384338378906% confidence that is a Outdoors
+99.06948852539062% confidence that is a Sand
+96.6515121459961% confidence that is a Desert
+93.18544006347656% confidence that is a Dune
+58.29045867919922% confidence that is a Grassland
+58.29045867919922% confidence that is a Field
+58.17866134643555% confidence that is a Ground
+55.499420166015625% confidence that is a Savanna`;
+
+const code12 = `analyseImage("./sossusvlei.JPG");
+`;
 export default function Blog1() {
   return (
     <Blog>
@@ -169,15 +178,29 @@ export default function Blog1() {
                 challenge and that is before other questions such as how the model is consumed are
                 addressed. Will a RESTful API need to be constructed to act as in interface for the
                 model and where will it be deployed? Fortunately{' '}
-                <a href="https://aws.amazon.com/rekognition/">AWS Rekognition</a> can answer all of
-                these problems for you.
+                <a
+                  href="https://aws.amazon.com/rekognition/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  AWS Rekognition
+                </a>{' '}
+                can answer all of these problems for you.
               </h2>
             </Col>
           </Row>
           <Row>
             <Col>
               <h1>How it works</h1>
-              <h2></h2>
+              <p>
+                The principle behind AWS Rekognition is simple; provide an image and in reponse
+                receive the names of the identified objects and a percentage value for the level of
+                confidence that the image contains the identified object. When accessing the
+                rekognition API the maximum number of labels and minimum confidence values can be
+                set.
+              </p>
+              <code>{`[{Name: lighthouse, Confidence: 98.4629},
+              {Name: rock,Confidence: 79.2097}]`}</code>
             </Col>
           </Row>
           <Row>
@@ -191,7 +214,13 @@ export default function Blog1() {
               <br />
               <p>
                 Full details can found on the{' '}
-                <a href="https://aws.amazon.com/rekognition/pricing/">AWS site.</a>
+                <a
+                  href="https://aws.amazon.com/rekognition/pricing/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  AWS site.
+                </a>
               </p>
             </Col>
           </Row>
@@ -201,9 +230,12 @@ export default function Blog1() {
               <h1>Creating AWS credentials and an S3 bucket</h1>
               <p>
                 Before we get started we will need to create some credentials by visiting the{' '}
-                <a href="https://console.aws.amazon.com">AWS console</a>. Once you have logged in
-                select the <b>IAM</b> service and navigate to the <b>users</b> section. Here will we
-                click <b>Add user</b> and create a user with programmatic access.
+                <a href="https://console.aws.amazon.com" target="_blank" rel="noopener noreferrer">
+                  AWS console
+                </a>
+                . Once you have logged in select the <b>IAM</b> service and navigate to the{' '}
+                <b>users</b> section. Here will we click <b>Add user</b> and create a user with
+                programmatic access.
                 <img src="https://lucas-blog-images.s3.eu-west-2.amazonaws.com/rekognition/rekognition1.png" />
                 <p>
                   Click next and progress to the screen where will give the user the required
@@ -303,7 +335,11 @@ export default function Blog1() {
               <p>
                 S3 is an object storage service and every file that is uploaded must have a key via
                 which it can be identified. We will generate this key by using the <code>uuid</code>{' '}
-                <a href="https://github.com/uuidjs/uuid"> package</a> that we installed earlier.
+                <a href="https://github.com/uuidjs/uuid" target="_blank" rel="noopener noreferrer">
+                  {' '}
+                  package
+                </a>{' '}
+                that we installed earlier.
               </p>
               <p>
                 Once we have uploaded the file we will return the response object, if an error
@@ -419,6 +455,39 @@ export default function Blog1() {
               >
                 {code7}
               </SyntaxHighlighter>
+
+              <p>
+                The image we will use is one the Namibian sand dunes at Sossusvlei that I took
+                during an epic road trip across Africa.
+              </p>
+              <img
+                style={{ border: 0 }}
+                alt="sossusvlei"
+                src="https://lucas-blog-images.s3.eu-west-2.amazonaws.com/rekognition/sossusvlei.JPG"
+              />
+              <p>
+                At the bottom of <code>index.js</code>We will invoke the <code>analyseImage</code>{' '}
+                function, passing in the path to our image file as a parameter{' '}
+              </p>
+              <SyntaxHighlighter
+                language="javascript"
+                customStyle={{ padding: 'none', fontSize: '100%' }}
+                style={a11yDark}
+              >
+                {code12}
+              </SyntaxHighlighter>
+              <p>
+                Open a terminal window in the <b>Rekognition</b> folder and run the following
+                command
+              </p>
+              <SyntaxHighlighter
+                language="bash"
+                customStyle={{ padding: 'none', fontSize: '100%' }}
+                style={a11yDark}
+              >
+                {`node index.js`}
+              </SyntaxHighlighter>
+              <p>code 11</p>
 
               <SyntaxHighlighter
                 language="plaintext"

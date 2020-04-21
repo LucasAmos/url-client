@@ -6,7 +6,6 @@
     "@fortawesome/fontawesome-svg-core": "^1.2.19",
     "@fortawesome/free-solid-svg-icons": "^5.9.0",
     "@fortawesome/react-fontawesome": "^0.1.4",
-    "moment": "^2.24.0",
     "react": "^16.8.6",
     "react-addons-css-transition-group": "^15.6.2",
     "react-bootstrap": "^1.0.0-beta.8",
@@ -22,6 +21,7 @@
     "validator": "^11.0.0"
   },
   "scripts": {
+    "analyze": "source-map-explorer 'build/static/js/*.js'",
     "dev": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
@@ -55,6 +55,7 @@
     "eslint-plugin-react": "^7.12.4",
     "jest-cli": "^24.8.0",
     "prettier": "^1.19.1",
-    "react-test-renderer": "^16.8.6"
+    "react-test-renderer": "^16.8.6",
+    "source-map-explorer": "^2.4.2"
   }
 }

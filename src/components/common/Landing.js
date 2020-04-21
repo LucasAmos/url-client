@@ -1,8 +1,6 @@
 import React, { useRef } from 'react';
 import smoothscroll from 'smoothscroll-polyfill';
-import moment from 'moment';
 import './Landing.css';
-import { Navbar, Nav, NavDropdown } from 'react-bootstrap';
 
 const Landing = React.forwardRef((props, ref) => {
   smoothscroll.polyfill();
@@ -25,7 +23,7 @@ const Landing = React.forwardRef((props, ref) => {
             onClick={() => scrollToRef(myRef)}
           />
         </div>
-        <div className="lucas">Lucas Amos {moment.utc().year()}</div>
+        <div className="lucas">Lucas Amos {new Date().getFullYear()}</div>
       </div>
       <div ref={ref} />
       <div ref={myRef} />

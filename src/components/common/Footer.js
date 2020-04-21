@@ -14,7 +14,11 @@ export default function Footer() {
       <a href="https://www.linkedin.com/in/lucasamos/" target="_blank" rel="noopener noreferrer">
         <img src={linkedin} className="image" alt="linkedin logo" />
       </a>
-      <a href="https://www.flickr.com/photos/181849230@N04/" target="_blank" rel="noopener noreferrer">
+      <a
+        href="https://www.flickr.com/photos/181849230@N04/"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
         <img src={flickr} className="image" alt="flickr logo" />
       </a>
 

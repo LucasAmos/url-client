@@ -13,8 +13,10 @@
 
 .blogPreview h1 {
   font-size: 30px;
+  margin-bottom: 20px;
 }
 
 .blogPreview h2 {
+  font-weight: 300;
   font-size: 18px;
 }

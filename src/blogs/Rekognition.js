@@ -5,8 +5,6 @@ import { Container, Row, Col } from 'react-bootstrap';
 import Blog from './Blog';
 import './blogpost.css';
 
-const ReactMarkdown = require('react-markdown/with-html');
-
 const code1 = `#.env file
 
 ACCESSKEYID=youraccesskeyhere
@@ -166,7 +164,7 @@ export default function Blog1() {
           <Row>
             <Col>
               <header>
-                Using AWS Rekognition to identify, people, objects and scenes in images{' '}
+                Using AWS Rekognition to identify, people, objects and scenes in images
               </header>
             </Col>
           </Row>
@@ -199,8 +197,10 @@ export default function Blog1() {
                 rekognition API the maximum number of labels and minimum confidence values can be
                 set.
               </p>
-              <code>{`[{Name: lighthouse, Confidence: 98.4629},
-              {Name: rock,Confidence: 79.2097}]`}</code>
+              <code>
+                {`[{Name: lighthouse, Confidence: 98.4629},
+              {Name: rock,Confidence: 79.2097}]`}
+              </code>
             </Col>
           </Row>
           <Row>
@@ -211,7 +211,6 @@ export default function Blog1() {
                 start at $0.001 for the first 1 million images processed a month, progressively
                 decreasing to $0.0004 per image when over 100 million images a month are processed.
               </p>
-              <br />
               <p>
                 Full details can found on the{' '}
                 <a
@@ -236,22 +235,52 @@ export default function Blog1() {
                 . Once you have logged in select the <b>IAM</b> service and navigate to the{' '}
                 <b>users</b> section. Here will we click <b>Add user</b> and create a user with
                 programmatic access.
-                <img src="https://lucas-blog-images.s3.eu-west-2.amazonaws.com/rekognition/rekognition1.png" />
-                <p>
-                  Click next and progress to the screen where will give the user the required
-                  permissions by clicking <b>Attach existing policies directly</b>. Here we can use
-                  the search box to add the <b> AmazonRekognitionFullAccess</b> and{' '}
-                  <b>AmazonS3FullAccess</b> policies. Click next twice and then click{' '}
-                  <b>create user</b>
-                </p>
-                <img src="https://lucas-blog-images.s3.eu-west-2.amazonaws.com/rekognition/rekognition2.png" />
               </p>
+              <img
+                alt="aws add user"
+                src="https://lucas-blog-images.s3.eu-west-2.amazonaws.com/rekognition/rekognition1.png"
+              />
+              <p>
+                Click next and progress to the screen where will give the user the required
+                permissions by clicking <b>Attach existing policies directly</b>. Here we can use
+                the search box to add the <b> AmazonRekognitionFullAccess</b> and{' '}
+                <b>AmazonS3FullAccess</b> policies. Click next twice and then click{' '}
+                <b>create user</b>
+              </p>
+              <img
+                alt="permissions summary"
+                src="https://lucas-blog-images.s3.eu-west-2.amazonaws.com/rekognition/rekognition2.png"
+              />
 
               <p>
                 Make sure to copy your Access key ID and Secret access key, we will need them later.
               </p>
 
-              <img src="https://lucas-blog-images.s3.eu-west-2.amazonaws.com/rekognition/rekognition3.png" />
+              <img
+                alt="access keys"
+                src="https://lucas-blog-images.s3.eu-west-2.amazonaws.com/rekognition/rekognition3.png"
+              />
+
+              <p>
+                Now we will create the S3 bucket, navigate to the S3 section of the AWS console and
+                click <b>create bucket.</b>
+              </p>
+
+              <img
+                alt="create bucket"
+                src="https://lucas-blog-images.s3.eu-west-2.amazonaws.com/rekognition/rekognition4.png"
+              />
+              <p>
+                Enter <b>rekognition-tutorial</b> as the bucket name, you can select any region but
+                make sure that you enter the same name in the <code>.env</code> file we will create
+                in the next step. For this example we will use the <b>us-east-1</b> region. As we
+                will only be accessing the bukcket programatically we can leave the{' '}
+                <b>block all public access</b> option selected.
+              </p>
+              <img
+                alt="bucket details"
+                src="https://lucas-blog-images.s3.eu-west-2.amazonaws.com/rekognition/rekognition5.png"
+              />
             </Col>
           </Row>
           <Row>
@@ -271,9 +300,13 @@ export default function Blog1() {
                 {code2}
               </SyntaxHighlighter>
               <p>
-                Before we write any code we need to create a <code>.env</code> file in the{' '}
+                Storing credentials in your code is always a bad idea as they can easily end up
+                exposed on the internet and can be used to run up anuthorised bils on your AWS
+                account. We can avoid this by creating a <code>.env</code> file in the{' '}
                 <b>Rekognition</b> directory, with the ACCESSKEYID and SECRETACCESSKEY values being
-                replaced with the credentials that you created using the AWS console.
+                replaced with the credentials that you created using the AWS console. If you commit
+                this code to a git repository make sure add the <code>.env</code> file to your{' '}
+                <code>.gitignore</code> file.
               </p>
               <SyntaxHighlighter
                 language="plaintext"
@@ -286,8 +319,8 @@ export default function Blog1() {
                 To process our images using the rekognition API we will need to make use of three
                 packages, the <b> AWS SDK, uuid and dotenv.</b> The AWS SDK is the Javascript
                 library used to access AWS services, uuid is used for generating Universally Unique
-                Identifiers and dotenv is used to store credentials in environment variables and
-                prevent them from being embedded in our code. Install these packages by running{' '}
+                Identifiers and dotenv is used to access the environment variables that we created
+                in the <code>.env</code> file. Install these packages by running{' '}
                 <code>yarn add aws-sdk uuid dotenv</code> <br />
                 <br />
                 Your <code>package.json</code> file should now look like this
@@ -339,7 +372,9 @@ export default function Blog1() {
                   {' '}
                   package
                 </a>{' '}
-                that we installed earlier.
+                that we installed earlier. We will use this along with the Bucket name and
+                fileContent to populate the params object that is passed as a parameter to the{' '}
+                <code>s3.upload()</code> API call.
               </p>
               <p>
                 Once we have uploaded the file we will return the response object, if an error
@@ -363,9 +398,7 @@ export default function Blog1() {
               <p>
                 Once the file has been succesfully uploaded to S3 the reponse object returns several
                 useful values, the most important of which is the <code>Key</code> value, this is
-                the value that we created using the <code>uuid</code> package. As this value is
-                returned with the reponse object we do not need to keep track of the value crated by
-                the uuid library for later use.
+                the value that we created using the <code>uuid</code> package.
               </p>
 
               <SyntaxHighlighter
@@ -391,8 +424,8 @@ export default function Blog1() {
               <p>
                 Finally we will create a <code>getImageLabels</code> function to handle the request
                 to the <b>Rekognition</b> API. This function will take two parameters; the{' '}
-                <b>bucket</b> bucket that the image was uploaded to and the <b>Key</b> that it was
-                created with. We want to call the <code>detectLabels</code> function on the{' '}
+                <b>bucket</b> that the image was uploaded to and the <b>Key</b> that it was created
+                with. We want to call the <code>detectLabels</code> function on the{' '}
                 <code>rekognition</code> object that we declared at the top of the file. To do this
                 we must construct a <code>params</code> object using the <b>bucket</b> and{' '}
                 <b>filename values</b>. We can also pass in an optional <b>MaxLabels</b> value to
@@ -466,7 +499,7 @@ export default function Blog1() {
                 src="https://lucas-blog-images.s3.eu-west-2.amazonaws.com/rekognition/sossusvlei.JPG"
               />
               <p>
-                At the bottom of <code>index.js</code>We will invoke the <code>analyseImage</code>{' '}
+                At the bottom of <code>index.js</code> we will invoke the <code>analyseImage</code>{' '}
                 function, passing in the path to our image file as a parameter{' '}
               </p>
               <SyntaxHighlighter
@@ -485,9 +518,13 @@ export default function Blog1() {
                 customStyle={{ padding: 'none', fontSize: '100%' }}
                 style={a11yDark}
               >
-                {`node index.js`}
+                node index.js
               </SyntaxHighlighter>
-              <p>code 11</p>
+              <p>
+                Here we can see that <b>Rekognition</b> has identifed with greater than 99%
+                probability that image is outdoors, in nature and contains sand and soil. There are
+                also other less confident and indeed incorrect labels.
+              </p>
 
               <SyntaxHighlighter
                 language="plaintext"
@@ -496,6 +533,11 @@ export default function Blog1() {
               >
                 {code11}
               </SyntaxHighlighter>
+              <p>
+                It's interesting to see that none of the labels identify that the image contains a
+                tree. A machine learning model is only as good as the data it has been trained on
+                and this was certainly unlike any tree I had seen before!
+              </p>
             </Col>
           </Row>
         </Container>

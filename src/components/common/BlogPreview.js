@@ -9,7 +9,7 @@ export default function BlogPreview({ title, image, body, link }) {
       <LinkContainer to={link}>
         <Row>
           <Col lg={4}>
-            <img src={image} />
+            <img alt="blog" src={image} />
           </Col>
           <Col lg={8}>
             <h1> {title}</h1>

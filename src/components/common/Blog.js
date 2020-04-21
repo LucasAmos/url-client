@@ -8,9 +8,9 @@ const Blog = () => {
     <NavigationWrapper>
       <div style={{ height: 50 }} />
       <BlogPreview
-        title="Using AWS Rekognition to identify the contents of an image"
+        title="Use AWS Rekognition to automate your image analysis"
         image="https://lucas-blog-images.s3.eu-west-2.amazonaws.com/rekognition.jpg"
-        body="AWS rekognition can give you probabilities"
+        body="An off the shelf machine learning solution without the need to train your own models"
         link="/blog/rekognition"
       />
       <div style={{ height: 50 }} />

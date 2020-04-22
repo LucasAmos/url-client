@@ -1,3 +1,5 @@
+// cSpell:words rekognition
+
 import React from 'react';
 import SyntaxHighlighter from 'react-syntax-highlighter';
 import { a11yDark } from 'react-syntax-highlighter/dist/esm/styles/hljs';
@@ -191,7 +193,7 @@ export default function Blog1() {
             <Col>
               <h1>How it works</h1>
               <p>
-                The principle behind AWS Rekognition is simple; provide an image and in reponse
+                The principle behind AWS Rekognition is simple; provide an image and in response
                 receive the names of the identified objects and a percentage value for the level of
                 confidence that the image contains the identified object. When accessing the
                 rekognition API the maximum number of labels and minimum confidence values can be
@@ -274,7 +276,7 @@ export default function Blog1() {
                 Enter <b>rekognition-tutorial</b> as the bucket name, you can select any region but
                 make sure that you enter the same name in the <code>.env</code> file we will create
                 in the next step. For this example we will use the <b>us-east-1</b> region. As we
-                will only be accessing the bukcket programatically we can leave the{' '}
+                will only be accessing the bucket programmatically we can leave the{' '}
                 <b>block all public access</b> option selected.
               </p>
               <img
@@ -301,7 +303,7 @@ export default function Blog1() {
               </SyntaxHighlighter>
               <p>
                 Storing credentials in your code is always a bad idea as they can easily end up
-                exposed on the internet and can be used to run up anuthorised bils on your AWS
+                exposed on the internet and can be used to run up unauthorised bills on your AWS
                 account. We can avoid this by creating a <code>.env</code> file in the{' '}
                 <b>Rekognition</b> directory, with the ACCESSKEYID and SECRETACCESSKEY values being
                 replaced with the credentials that you created using the AWS console. If you commit
@@ -343,7 +345,6 @@ export default function Blog1() {
                 and region. Finally we will create the <code>s3</code> and <code>rekognition</code>{' '}
                 objects that we will use to access the S3 and Rekognition APIs.
               </p>
-
               <SyntaxHighlighter
                 language="javascript"
                 customStyle={{ padding: 'none', fontSize: '100%' }}
@@ -351,7 +352,6 @@ export default function Blog1() {
               >
                 {code3}
               </SyntaxHighlighter>
-
               <p>
                 At this point you may be wondering why we will need to access the S3 API, after all
                 we only want to analyse images, we don't actually want to store them. While this is
@@ -359,7 +359,6 @@ export default function Blog1() {
                 the super low costs of S3 and that the image may already be stored in S3 this is the
                 approach we will use.
               </p>
-
               <p>
                 To upload the file to S3 we will create the <code>uploadFile</code> function which
                 will take two parameters; the file path of the image we will upload and the name of
@@ -383,10 +382,9 @@ export default function Blog1() {
               <p>
                 It's important to note that we are creating an asynchronous function that returns
                 the result of <code>s3.upload(params).promise()</code>. This is important as when we
-                use this function we will want to <code>await</code> the reponse from the S3 API
+                use this function we will want to <code>await</code> the response from the S3 API
                 before we invoke the call to the Rekognition API.
               </p>
-
               <SyntaxHighlighter
                 language="javascript"
                 customStyle={{ padding: 'none', fontSize: '100%' }}
@@ -394,13 +392,11 @@ export default function Blog1() {
               >
                 {code5}
               </SyntaxHighlighter>
-
               <p>
-                Once the file has been succesfully uploaded to S3 the reponse object returns several
-                useful values, the most important of which is the <code>Key</code> value, this is
-                the value that we created using the <code>uuid</code> package.
+                Once the file has been successfully uploaded to S3 the response object returns
+                several useful values, the most important of which is the <code>Key</code> value,
+                this is the value that we created using the <code>uuid</code> package.
               </p>
-
               <SyntaxHighlighter
                 language="json"
                 customStyle={{ padding: 'none', fontSize: '100%' }}
@@ -420,7 +416,6 @@ export default function Blog1() {
               >
                 {code6}
               </SyntaxHighlighter>
-
               <p>
                 Finally we will create a <code>getImageLabels</code> function to handle the request
                 to the <b>Rekognition</b> API. This function will take two parameters; the{' '}
@@ -434,13 +429,12 @@ export default function Blog1() {
                 is unsuccessful.
               </p>
               <SyntaxHighlighter
-                language="javscript"
+                language="javascript"
                 customStyle={{ padding: 'none', fontSize: '100%' }}
                 style={a11yDark}
               >
                 {code9}
               </SyntaxHighlighter>
-
               <p>
                 A successful invocation of the <code>detectLabels</code> function will return an
                 object containing a <b> Labels</b> Array. Each label will include a name for the
@@ -454,7 +448,6 @@ export default function Blog1() {
               >
                 {code10}
               </SyntaxHighlighter>
-
               <p>
                 Now it is time to combine all of these functions and do some image processing! We
                 will create an <code>analyseImage</code> function that we will use to invoke our
@@ -469,7 +462,7 @@ export default function Blog1() {
                 Secondly, it will take the <code>Key</code> value returned by the{' '}
                 <code> s3.upload</code> request and use this as a parameter when invoking the{' '}
                 <code>getImageLabels</code> function. We will also call the <code>deleteFile</code>{' '}
-                function but we will not await the reponse, however if for some reason the file is
+                function but we will not await the response, however if for some reason the file is
                 not deleted we will not know about it.
               </p>
               <p>
@@ -480,7 +473,6 @@ export default function Blog1() {
                 We should note that this function includes a <code>try/catch</code> block which will
                 catch any errors thrown by our functions, printing out the error message.
               </p>
-
               <SyntaxHighlighter
                 language="javascript"
                 customStyle={{ padding: 'none', fontSize: '100%' }}
@@ -488,7 +480,6 @@ export default function Blog1() {
               >
                 {code7}
               </SyntaxHighlighter>
-
               <p>
                 The image we will use is one the Namibian sand dunes at Sossusvlei that I took
                 during an epic road trip across Africa.
@@ -521,11 +512,10 @@ export default function Blog1() {
                 node index.js
               </SyntaxHighlighter>
               <p>
-                Here we can see that <b>Rekognition</b> has identifed with greater than 99%
+                Here we can see that <b>Rekognition</b> has identified with greater than 99%
                 probability that image is outdoors, in nature and contains sand and soil. There are
                 also other less confident and indeed incorrect labels.
               </p>
-
               <SyntaxHighlighter
                 language="plaintext"
                 customStyle={{ padding: 'none', fontSize: '100%' }}
@@ -538,6 +528,7 @@ export default function Blog1() {
                 tree. A machine learning model is only as good as the data it has been trained on
                 and this was certainly unlike any tree I had seen before!
               </p>
+              `{' '}
             </Col>
           </Row>
         </Container>

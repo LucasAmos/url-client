@@ -20,3 +20,23 @@
   font-weight: 300;
   font-size: 18px;
 }
+
+.blogPreview h3 {
+  float: left;
+  font-size: 19px;
+  font-weight: 600;
+  font-family: Helvetica;
+  letter-spacing: 0.5px;
+}
+
+.blogPreview .details div {
+  float: left;
+}
+.blogPreview #date {
+}
+
+@media (max-width: 992px) {
+  .blogPreview #date {
+    margin-top: 20px;
+  }
+}

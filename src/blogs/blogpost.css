@@ -38,7 +38,7 @@
 
 .blogpost p {
   font-size: 22px;
-  font-weight: 100;
+  font-weight: 300;
 }
 
 .blogpost a {
@@ -52,7 +52,7 @@
 }
 
 .blogpost img {
-  margin:20px 40px 40px 40px;
+  margin: 20px 40px 40px 40px;
   border: 2px solid gray;
   width: 80%;
 }

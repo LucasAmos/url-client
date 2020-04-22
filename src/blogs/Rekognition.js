@@ -523,12 +523,27 @@ export default function Blog1() {
               >
                 {code11}
               </SyntaxHighlighter>
+              <h1>Conclusion</h1>
               <p>
-                It's interesting to see that none of the labels identify that the image contains a
-                tree. A machine learning model is only as good as the data it has been trained on
-                and this was certainly unlike any tree I had seen before!
+                It's interesting to see that while the labels with over 93% confidence are all
+                accurate none of the labels identify that the image contains trees and a road. A
+                machine learning model is only as good as the data it has been trained on and this
+                was certainly unlike any tree I had seen before!
               </p>
-              `{' '}
+              <p>
+                Keep tuned for part two of this article on AWS Rekognition where we will extend this
+                code to parse the text in an image!
+              </p>
+              <p>
+                All of the code used in this example can be viewed on
+                <a
+                  href="https://github.com/LucasAmos/AWS/tree/master/Rekognition"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  GitHub
+                </a>
+              </p>
             </Col>
           </Row>
         </Container>

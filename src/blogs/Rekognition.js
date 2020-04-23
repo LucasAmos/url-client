@@ -535,7 +535,7 @@ export default function Blog1() {
                 code to parse the text in an image!
               </p>
               <p>
-                All of the code used in this example can be viewed on
+                All of the code used in this example can be viewed on{' '}
                 <a
                   href="https://github.com/LucasAmos/AWS/tree/master/Rekognition"
                   target="_blank"

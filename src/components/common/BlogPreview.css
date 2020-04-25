@@ -1,5 +1,5 @@
 .blogPreview {
-  background-color: rgba(0, 0, 0, 0.025);
+  background-color: #00000005;
 }
 
 .blogPreview .row {
@@ -9,6 +9,22 @@
 
 .blogPreview img {
   width: 100%;
+}
+
+.blogPreview .loading {
+  height: 100%;
+  background: url('../../res/images/loading.gif');
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.blogPreview .preview {
+  height: 150px;
+}
+
+.blogPreview .loaded {
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .blogPreview h1 {
@@ -32,11 +48,45 @@
 .blogPreview .details div {
   float: left;
 }
-.blogPreview #date {
-}
 
-@media (max-width: 992px) {
+@media (min-width: 768px) and (max-width: 991px) {
   .blogPreview #date {
     margin-top: 20px;
+  }
+  .blogPreview .preview {
+    height: 300px;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 767px) {
+  .blogPreview #date {
+    margin-top: 10px;
+  }
+  .blogPreview .preview {
+    height: 200px;
+  }
+}
+
+@media (max-width: 575px) {
+  .blogPreview #date {
+    margin-top: 10px;
+    margin-bottom: 0px;
+  }
+  .blogPreview .preview {
+    height: 200px;
+  }
+
+  .blogPreview h1 {
+    font-size: 22px;
+    margin-bottom: 10px;
+  }
+
+  .blogPreview h2 {
+    font-size: 16px;
+  }
+
+  .blogPreview #date h3 {
+    font-size: 16px;
+    margin-bottom: 5px;
   }
 }

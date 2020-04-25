@@ -25,7 +25,11 @@ const Description = React.forwardRef((props, ref) => {
               </Fade>
             </Col>
             <Col lg={12} className="col-two">
-              <a href="https://www.linkedin.com/in/lucasamos/" target="_blank" rel="noopener noreferrer">
+              <a
+                href="https://www.linkedin.com/in/lucasamos/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <Fade delay={200}>
                   <Button variant="light" className="linkedin-button hvr-pulse-grow">
                     LinkedIn

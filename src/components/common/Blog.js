@@ -2,7 +2,7 @@ import React from 'react';
 import './blog.css';
 import NavigationWrapper from './NavigationWrapper';
 import BlogPreview from './BlogPreview';
-import rekog from '../../res/blogs/rekognition.jpg';
+import rekognition from '../../res/blogs/rekognition.jpg';
 
 const Blog = () => {
   return (
@@ -10,7 +10,7 @@ const Blog = () => {
       <div style={{ height: 50 }} />
       <BlogPreview
         title="Use AWS Rekognition to automate your image analysis: Part 1"
-        image={rekog}
+        image={rekognition}
         body="An off the shelf machine learning solution without the need to train your own models"
         link="/blog/rekognition"
         date="22/4/2020"

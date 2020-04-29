@@ -6,6 +6,12 @@ import { a11yDark } from 'react-syntax-highlighter/dist/esm/styles/hljs';
 import { Container, Row, Col } from 'react-bootstrap';
 import Blog from './Blog';
 import './blogpost.css';
+import rekognition1 from '../res/blogs/rekognition1/rekognition1.png';
+import rekognition2 from '../res/blogs/rekognition1/rekognition2.png';
+import rekognition3 from '../res/blogs/rekognition1/rekognition3.png';
+import rekognition4 from '../res/blogs/rekognition1/rekognition4.png';
+import rekognition5 from '../res/blogs/rekognition1/rekognition5.png';
+import sossusvlei from '../res/blogs/rekognition1/sossusvlei.JPG';
 
 const code1 = `#.env file
 
@@ -238,10 +244,7 @@ export default function Blog1() {
                 <b>users</b> section. Here will we click <b>Add user</b> and create a user with
                 programmatic access.
               </p>
-              <img
-                alt="aws add user"
-                src="https://lucas-blog-images.s3.eu-west-2.amazonaws.com/rekognition/rekognition1.png"
-              />
+              <img alt="aws add user" src={rekognition1} />
               <p>
                 Click next and progress to the screen where will give the user the required
                 permissions by clicking <b>Attach existing policies directly</b>. Here we can use
@@ -249,29 +252,20 @@ export default function Blog1() {
                 <b>AmazonS3FullAccess</b> policies. Click next twice and then click{' '}
                 <b>create user</b>
               </p>
-              <img
-                alt="permissions summary"
-                src="https://lucas-blog-images.s3.eu-west-2.amazonaws.com/rekognition/rekognition2.png"
-              />
+              <img alt="permissions summary" src={rekognition2} />
 
               <p>
                 Make sure to copy your Access key ID and Secret access key, we will need them later.
               </p>
 
-              <img
-                alt="access keys"
-                src="https://lucas-blog-images.s3.eu-west-2.amazonaws.com/rekognition/rekognition3.png"
-              />
+              <img alt="access keys" src={rekognition3} />
 
               <p>
                 Now we will create the S3 bucket, navigate to the S3 section of the AWS console and
                 click <b>create bucket.</b>
               </p>
 
-              <img
-                alt="create bucket"
-                src="https://lucas-blog-images.s3.eu-west-2.amazonaws.com/rekognition/rekognition4.png"
-              />
+              <img alt="create bucket" src={rekognition4} />
               <p>
                 Enter <b>rekognition-tutorial</b> as the bucket name, you can select any region but
                 make sure that you enter the same name in the <code>.env</code> file we will create
@@ -279,10 +273,7 @@ export default function Blog1() {
                 will only be accessing the bucket programmatically we can leave the{' '}
                 <b>block all public access</b> option selected.
               </p>
-              <img
-                alt="bucket details"
-                src="https://lucas-blog-images.s3.eu-west-2.amazonaws.com/rekognition/rekognition5.png"
-              />
+              <img alt="bucket details" src={rekognition5} />
             </Col>
           </Row>
           <Row>
@@ -484,11 +475,7 @@ export default function Blog1() {
                 The image we will use is one the Namibian sand dunes at Sossusvlei that I took
                 during an epic road trip across Africa.
               </p>
-              <img
-                style={{ border: 0 }}
-                alt="sossusvlei"
-                src="https://lucas-blog-images.s3.eu-west-2.amazonaws.com/rekognition/sossusvlei.JPG"
-              />
+              <img style={{ border: 0 }} alt="sossusvlei" src={sossusvlei} />
               <p>
                 At the bottom of <code>index.js</code> we will invoke the <code>analyseImage</code>{' '}
                 function, passing in the path to our image file as a parameter{' '}
